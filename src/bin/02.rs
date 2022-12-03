@@ -20,7 +20,9 @@ pub fn part_one(input: &str) -> Option<u32> {
         score += 1;
         if my_index == their_index {
             score += 3;
-        } else if (my_index > their_index && (my_index - their_index) == 1) || (my_index < their_index && (their_index - my_index) == 2) {
+        } else if (my_index > their_index && (my_index - their_index) == 1)
+            || (my_index < their_index && (their_index - my_index) == 2)
+        {
             score += 6;
         }
     }
